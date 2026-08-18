@@ -1,26 +1,7 @@
 """
-Favorite stations, persisted to a local JSON file, plus a haversine
-distance helper for finding nearby stations.
+Geo helpers — great-circle distance and nearest-station lookup.
 """
-import json
-import os
 from math import radians, sin, cos, sqrt, atan2
-
-FAVORITES_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "favorites.json")
-
-
-def load_favorites() -> list[str]:
-    """Return the list of favorited station names (empty list if none saved yet)."""
-    if not os.path.exists(FAVORITES_FILE):
-        return []
-    with open(FAVORITES_FILE) as f:
-        return json.load(f)
-
-
-def save_favorites(favorites: list[str]) -> None:
-    os.makedirs(os.path.dirname(FAVORITES_FILE), exist_ok=True)
-    with open(FAVORITES_FILE, "w") as f:
-        json.dump(favorites, f, indent=2)
 
 
 def haversine_km(lat1, lon1, lat2, lon2) -> float:
