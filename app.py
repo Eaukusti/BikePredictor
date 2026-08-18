@@ -47,6 +47,7 @@ if st.button(star_label):
     else:
         favorites.append(station_name)
     save_favorites(favorites)
+    st.rerun
 
 col1, col2 = st.columns(2)
 col1.metric("Bikes available now", int(row["bikes_available"]))
