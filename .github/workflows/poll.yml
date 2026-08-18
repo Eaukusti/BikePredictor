@@ -28,3 +28,4 @@ jobs:
           git add data/history.csv
           git diff --quiet --cached || git commit -m "Update bike station history"
           git push
+# trigger schedule re-registration
