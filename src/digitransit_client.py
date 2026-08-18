@@ -24,6 +24,7 @@ QUERY_ALL_STATIONS = """
     name
     lat
     lon
+    capacity
     availableVehicles {
       byType {
         count
@@ -71,9 +72,15 @@ def fetch_stations() -> list[dict]:
     resp.raise_for_status()
     stations = resp.json()["data"]["vehicleRentalStations"]
 
+
     for s in stations:
         s["bikes_available"] = _sum_counts(s["availableVehicles"]["byType"])
-        s["docks_available"] = _sum_counts(s["availableSpaces"]["byType"])
+        spaces = _sum_counts(s["availableSpaces"]["byType"])
+        if spaces == 0 and s.get("capacity") is not None:
+            # availableSpaces.byType comes back empty for this feed —
+            # fall back to capacity minus bikes currently docked
+            spaces = max(s["capacity"] - s["bikes_available"], 0)
+        s["docks_available"] = spaces
 
     return stations
 
