@@ -55,4 +55,5 @@ def predict_hourly(history_df, station_name, value_col, target_times, now, curre
         recency_weight = np.exp(-hours_ahead / decay_hours)
         predictions.append(recency_weight * current_value + (1 - recency_weight) * baseline)
 
-    return pd.Series(predictions, index=target_times, name=value_col)
+    return pd.Series(predictions, index=target_times, name=value_col).round().astype(int)
+

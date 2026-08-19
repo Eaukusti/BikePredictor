@@ -25,6 +25,12 @@ def upcoming_days(n=5, tz=TZ):
     return days
 
 
+def day_hour_index(target_date, tz=TZ):
+    """The 24 hourly timestamps (midnight to 23:00, local time) for one date."""
+    day_start = pd.Timestamp(target_date, tz=tz)
+    return pd.date_range(day_start, periods=24, freq="h")
+
+
 def hourly_series(history_df, station_name, value_col, target_date, tz=TZ):
     """Return a 24-point hourly Series (local time, midnight to 23:00) for
     one station/day, built from raw polled snapshots.
@@ -40,8 +46,7 @@ def hourly_series(history_df, station_name, value_col, target_date, tz=TZ):
     s = station_hist.set_index("timestamp")[value_col].sort_index()
     s = s.tz_convert(tz)
 
-    day_start = pd.Timestamp(target_date, tz=tz)
-    day_index = pd.date_range(day_start, periods=24, freq="h")
+    day_index = day_hour_index(target_date, tz)
 
     hourly_all = s.resample("h").last()
     combined_index = hourly_all.index.union(day_index)
