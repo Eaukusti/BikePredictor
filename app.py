@@ -58,6 +58,7 @@ else:
 
             now = pd.Timestamp.now(tz=TZ)
             current_value = int(row["bikes_available"])
+            #decay_hours = st.slider("Decay hours (debug)", 1.0, 24.0, 6.0, step=0.5) #commented out for now, but could be useful for debugging
 
             series = hourly_series(hist, station_name, "bikes_available", day)
             if series is None or series.dropna().empty:

@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 MIN_SAMPLES = 2    # minimum observations before a tier is trusted
-DECAY_HOURS = 6.0  # roughly how many hours ahead 'recency' stays meaningful
+DECAY_HOURS = 3.0  # roughly how many hours ahead 'recency' stays meaningful
 
 
 def _baseline_for_hour(history_station, weekday, hour, value_col):
@@ -37,7 +37,7 @@ def _baseline_for_hour(history_station, weekday, hour, value_col):
     return None
 
 
-def predict_hourly(history_df, station_name, value_col, target_times, now, current_value):
+def predict_hourly(history_df, station_name, value_col, target_times, now, current_value, decay_hours=DECAY_HOURS):
     """Predict value_col at each timestamp in target_times (future relative
     to `now`), blending the live current_value with a historical baseline.
     Returns a Series indexed by target_times."""
@@ -52,7 +52,7 @@ def predict_hourly(history_df, station_name, value_col, target_times, now, curre
             predictions.append(current_value)  # no history yet — best guess is "no change"
             continue
 
-        recency_weight = np.exp(-hours_ahead / DECAY_HOURS)
+        recency_weight = np.exp(-hours_ahead / decay_hours)
         predictions.append(recency_weight * current_value + (1 - recency_weight) * baseline)
 
     return pd.Series(predictions, index=target_times, name=value_col)
