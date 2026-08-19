@@ -31,9 +31,19 @@ station_name = st.selectbox("Pick a station", all_names, key="selected_station")
 
 row = df[df["name"] == station_name].iloc[0]
 
-col1, col2 = st.columns(2)
-col1.metric("Bikes available now", int(row["bikes_available"]))
-col2.metric("Free docks now", int(row["docks_available"]))
+st.markdown(f"""
+<div style="display:flex; gap:2.5rem; margin-bottom:1rem;">
+  <div>
+    <div style="color:gray; font-size:0.9rem;">Bikes available now</div>
+    <div style="font-size:2rem; font-weight:600;">{int(row['bikes_available'])}</div>
+  </div>
+  <div>
+    <div style="color:gray; font-size:0.9rem;">Free docks now</div>
+    <div style="font-size:2rem; font-weight:600;">{int(row['docks_available'])}</div>
+  </div>
+</div>
+""", unsafe_allow_html=True)
+
 
 # Fixed y-axis (0 to station capacity), used on every chart below
 capacity = row.get("capacity")
@@ -100,7 +110,7 @@ else:
                     color="red", strokeDash=[4, 4]
                 ).encode(x="hour:T")
 
-                st.altair_chart((past_line + future_line + rule).interactive(), use_container_width=True)
+                st.altair_chart((past_line + future_line + rule), use_container_width=True)
                 st.caption(f"Red line: right now ({now:%H:%M}). Dotted: forecast for the rest of today.")
 
             else:
@@ -115,31 +125,22 @@ else:
                     x=alt.X("hour:T", title="Hour", axis=alt.Axis(format="%H:%M")),
                     y=alt.Y("bikes_available:Q", scale=y_scale, axis=y_axis),
                 )
-                st.altair_chart(future_line.interactive(), use_container_width=True)
+                st.altair_chart(future_line, use_container_width=True)
                 st.caption(f"Forecast for {label} — accuracy improves as more history accumulates.")
 
 st.subheader(f"Nearest stations to {station_name}")
 nearby = nearest_stations(df, row, n=5)
 
-header = st.columns([3, 1.3, 1, 1])
-header[0].markdown("**Station**")
-header[1].markdown("**Distance (km)**")
-header[2].markdown("**Bikes**")
-header[3].markdown("**Docks**")
-
 for _, nearby_row in nearby.iterrows():
-    cols = st.columns([3, 1.3, 1, 1])
-    clicked = cols[0].button(
-        nearby_row["name"],
-        key=f"nearest_btn_{nearby_row['name']}",
-        use_container_width=True,
+    label = (
+        f"{nearby_row['name']} — {nearby_row['distance_km']:.2f} km · "
+        f"{int(nearby_row['bikes_available'])} bikes · {int(nearby_row['docks_available'])} docks"
     )
-    cols[1].write(f"{nearby_row['distance_km']:.2f}")
-    cols[2].write(int(nearby_row["bikes_available"]))
-    cols[3].write(int(nearby_row["docks_available"]))
+    clicked = st.button(label, key=f"nearest_btn_{nearby_row['name']}", use_container_width=True)
 
     if clicked:
         st.session_state.pending_station = nearby_row["name"]
         st.rerun()
+
 
 
