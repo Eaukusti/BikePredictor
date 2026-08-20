@@ -53,7 +53,6 @@ def fetch_stations() -> list[dict]:
     """Return current status of every HSL city bike station as a list of
     dicts: stationId, name, lat, lon, bikes_available, docks_available."""
     api_key = os.environ.get("DIGITRANSIT_API_KEY")
-    print(f"key length={len(api_key)}, starts={api_key[:4]!r}, ends={api_key[-4:]!r}")
     if not api_key:
         raise RuntimeError(
             "Set the DIGITRANSIT_API_KEY environment variable "

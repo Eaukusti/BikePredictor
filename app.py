@@ -44,16 +44,11 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-
-# Fixed y-axis (0 to station capacity), used on every chart below
-capacity = row.get("capacity")
-if pd.notna(capacity):
-    capacity = int(capacity)
-    y_scale = alt.Scale(domain=[0, capacity])
-    y_axis = alt.Axis(title="Bikes available", values=list(range(0, capacity + 1)), tickMinStep=1)
-else:
-    y_scale = alt.Undefined
-    y_axis = alt.Axis(title="Bikes available")
+# Y-axis scales to whatever data is actually plotted (a station can
+# temporarily exceed its nominal capacity via overloaded returns, so a
+# fixed 0-to-capacity domain isn't reliable). tickMinStep=1 just keeps
+# labels as whole bikes rather than fractional ticks.
+y_axis = alt.Axis(title="Bikes available", tickMinStep=1)
 
 st.subheader("Availability")
 try:
@@ -100,11 +95,11 @@ else:
 
                 past_line = alt.Chart(past).mark_line(color="#1f77b4").encode(
                     x=alt.X("hour:T", title="Hour", axis=alt.Axis(format="%H:%M")),
-                    y=alt.Y("bikes_available:Q", scale=y_scale, axis=y_axis),
+                    y=alt.Y("bikes_available:Q", axis=y_axis),
                 )
                 future_line = alt.Chart(future).mark_line(color="#1f77b4", strokeDash=[4, 4]).encode(
                     x="hour:T",
-                    y=alt.Y("bikes_available:Q", scale=y_scale, axis=y_axis),
+                    y=alt.Y("bikes_available:Q", axis=y_axis),
                 )
                 rule = alt.Chart(pd.DataFrame({"hour": [now]})).mark_rule(
                     color="red", strokeDash=[4, 4]
@@ -123,7 +118,7 @@ else:
 
                 future_line = alt.Chart(future).mark_line(color="#1f77b4", strokeDash=[4, 4]).encode(
                     x=alt.X("hour:T", title="Hour", axis=alt.Axis(format="%H:%M")),
-                    y=alt.Y("bikes_available:Q", scale=y_scale, axis=y_axis),
+                    y=alt.Y("bikes_available:Q", axis=y_axis),
                 )
                 st.altair_chart(future_line, use_container_width=True)
                 st.caption(f"Forecast for {label} — accuracy improves as more history accumulates.")
