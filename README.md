@@ -2,6 +2,8 @@
 
 **Helsinki City Bike Availability Predictor** — a real-time dashboard showing live bike station status and hourly predictions for the next 5 days. Built with HSL's Digitransit API, historical time-series analysis, and Streamlit.
 
+Streamlit hosted version can be accessed here https://bikepredictor.streamlit.app
+
 ## Overview
 
 Is there going to be a bike at your station when you need it? This app predicts short-term bike availability by blending live sensor readings with historical patterns. It tells you:
@@ -134,69 +136,6 @@ BikePredictor/
 - `haversine_km()`: Great-circle distance between two lat/lon points
 - `nearest_stations()`: Find N closest stations to a given location
 
-## Setup & Deployment
-
-### 1. Prerequisites
-- Python 3.7+ (tested with 3.9+)
-- Free API key: https://portal-api.digitransit.fi/
-- GitHub account (for Actions-based polling)
-
-### 2. Local Development
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Test API access
-export DIGITRANSIT_API_KEY=your_key_here
-python src/digitransit_client.py
-
-# Run the web app (you'll see live data, but no history yet)
-streamlit run app.py
-```
-
-### 3. Continuous History Collection (GitHub Actions)
-
-1. Add `DIGITRANSIT_API_KEY` as a repository secret:
-   - Settings → Secrets and variables → Actions → New repository secret
-   
-2. Create `.github/workflows/poll.yml`:
-   ```yaml
-   name: Poll city bike stations
-   on:
-     schedule:
-       - cron: '*/15 * * * *'  # Every 15 minutes
-     workflow_dispatch:
-   
-   jobs:
-     poll:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v3
-         - uses: actions/setup-python@v4
-           with:
-             python-version: '3.9'
-         - run: pip install -r requirements.txt
-         - run: python src/poll_and_log.py
-           env:
-             DIGITRANSIT_API_KEY: ${{ secrets.DIGITRANSIT_API_KEY }}
-         - run: |
-             git config user.name "GitHub Actions"
-             git config user.email "actions@github.com"
-             git add data/history.csv
-             git commit -m "Update bike history" || true
-             git push
-   ```
-
-3. Manually trigger workflow once to bootstrap `history.csv`
-
-### 4. Deployment to Streamlit Cloud
-
-1. Push repo to GitHub
-2. Go to https://share.streamlit.io
-3. Connect your GitHub repo
-4. Add `DIGITRANSIT_API_KEY` as a secret in app settings
-5. Every push to main redeploys automatically
 
 ## Key Design Decisions
 
@@ -223,26 +162,13 @@ This is tunable; you could experiment with shorter decay for more reactive predi
 
 ## Data Collection Notes
 
-- **Latency**: API polls run on a 15-minute schedule. High-frequency changes within minutes won't be captured.
+- **Latency**: API polls run on a 15-minute schedule and is additionally limited by GitHub's servers resulting in an approx hourly data feed. High-frequency changes within minutes won't be captured.
 - **Gaps**: If a poll fails or is skipped, `hourly_series()` forward-fills the previous value. This assumes "no change" rather than missing data.
 - **Station churn**: New stations occasionally appear in the HSL network. Once they're in `history.csv`, predictions work for them.
 - **Schema stability**: HSL's GraphQL schema is versioned, but the exact field names can change. The GraphiQL explorer (linked in `digitransit_client.py`) is the source of truth.
 
 ## Future Improvements
 
-- **Exogenous features**: Weather, events, holidays (manual calibration needed)
 - **User location**: Geolocation-based station suggestions
-- **Confidence intervals**: Predict high/low bounds, not just point estimates
 - **Multiple predictions**: Compare strategies (baseline only, live only, weighted blend)
 - **Performance optimization**: Cache history, index by station for faster lookups
-- **Mobile app**: React Native or Flutter to make it accessible on phones
-
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| "DIGITRANSIT_API_KEY not set" | Export the env var or add to GitHub Secrets |
-| Empty trend chart | Wait for GitHub Actions to run a few times (15-30 min) |
-| "Prediction not built yet" | Not enough history for that station; check if it has recent data |
-| "No data for this station" | Station may be new or data hasn't been polled yet |
-| API errors | Check GraphiQL explorer for schema changes: https://digitransit.fi/en/developers/apis/1-routing-api/1-graphiql/ |
