@@ -72471,3 +72471,459 @@ timestamp,station_id,name,bikes_available,docks_available
 2026-08-29T05:05+00:00,smoove:703,Elfvik,3,7
 2026-08-29T05:05+00:00,smoove:705,Laajalahden keskus,8,8
 2026-08-29T05:05+00:00,smoove:707,Majurinkulma,13,11
+2026-08-29T05:20+00:00,smoove:900,Orionintie,1,19
+2026-08-29T05:20+00:00,smoove:902,Derby Business Park,9,11
+2026-08-29T05:20+00:00,smoove:077,Nordenskiöldinaukio,20,0
+2026-08-29T05:20+00:00,smoove:078,Messeniuksenkatu,3,17
+2026-08-29T05:20+00:00,smoove:079,Uimastadion,5,13
+2026-08-29T05:20+00:00,smoove:070,Sammonpuistikko,2,12
+2026-08-29T05:20+00:00,smoove:071,Hietaniemenkatu,11,13
+2026-08-29T05:20+00:00,smoove:072,Eteläinen Hesperiankatu,17,7
+2026-08-29T05:20+00:00,smoove:073,Kesäkatu,8,16
+2026-08-29T05:20+00:00,smoove:074,Rajasaarentie,4,12
+2026-08-29T05:20+00:00,smoove:075,Korjaamo,38,0
+2026-08-29T05:20+00:00,smoove:076,Olympiastadion,7,11
+2026-08-29T05:20+00:00,smoove:088,Kiskontie,7,13
+2026-08-29T05:20+00:00,smoove:089,Tilkanvierto,12,4
+2026-08-29T05:20+00:00,smoove:080,Jäähalli,6,16
+2026-08-29T05:20+00:00,smoove:081,Stenbäckinkatu,0,20
+2026-08-29T05:20+00:00,smoove:082,Töölöntulli,5,7
+2026-08-29T05:20+00:00,smoove:083,Meilahden sairaala,0,28
+2026-08-29T05:20+00:00,smoove:084,Paciuksenkatu,2,12
+2026-08-29T05:20+00:00,smoove:085,Jalavatie,3,13
+2026-08-29T05:20+00:00,smoove:086,Kuusitie,11,13
+2026-08-29T05:20+00:00,smoove:087,Kustaankatu,0,20
+2026-08-29T05:20+00:00,smoove:099,Muusantori,28,0
+2026-08-29T05:20+00:00,smoove:091,Seurasaari,4,18
+2026-08-29T05:20+00:00,smoove:092,Saunalahdentie,9,0
+2026-08-29T05:20+00:00,smoove:093,Torpanranta,10,6
+2026-08-29T05:20+00:00,smoove:094,Laajalahden aukio,31,0
+2026-08-29T05:20+00:00,smoove:095,Munkkiniemen aukio,25,0
+2026-08-29T05:20+00:00,smoove:096,Huopalahdentie,19,1
+2026-08-29T05:20+00:00,smoove:098,Ulvilantie,4,8
+2026-08-29T05:20+00:00,smoove:090,Paciuksenkaari,8,12
+2026-08-29T05:20+00:00,smoove:033,Kauppakorkeakoulu,1,15
+2026-08-29T05:20+00:00,smoove:275,Itäkeskus (M),5,23
+2026-08-29T05:20+00:00,smoove:396,Malminkartanonhuippu,5,7
+2026-08-29T05:20+00:00,smoove:034,Kansallismuseo,1,15
+2026-08-29T05:20+00:00,smoove:276,Puotinharju,14,10
+2026-08-29T05:20+00:00,smoove:397,Hankasuontie,5,11
+2026-08-29T05:20+00:00,smoove:035,Cygnaeuksenkatu,1,15
+2026-08-29T05:20+00:00,smoove:277,Marjaniemi,18,0
+2026-08-29T05:20+00:00,smoove:398,Ajomiehentie,5,15
+2026-08-29T05:20+00:00,smoove:036,Apollonkatu,2,18
+2026-08-29T05:20+00:00,smoove:278,Puotilantie,0,14
+2026-08-29T05:20+00:00,smoove:399,Vähäntuvantie,3,11
+2026-08-29T05:20+00:00,smoove:037,Töölönkatu,2,16
+2026-08-29T05:20+00:00,smoove:279,Puotinkylän kartano,22,0
+2026-08-29T05:20+00:00,smoove:038,Töölöntori,7,9
+2026-08-29T05:20+00:00,smoove:039,Ooppera,5,15
+2026-08-29T05:20+00:00,smoove:390,Trumpettikuja,4,12
+2026-08-29T05:20+00:00,smoove:270,Tulisuontie,1,15
+2026-08-29T05:20+00:00,smoove:391,Tollinpolku,11,1
+2026-08-29T05:20+00:00,smoove:150,Töölönlahden puisto,2,22
+2026-08-29T05:20+00:00,smoove:271,Prinsessantie,5,11
+2026-08-29T05:20+00:00,smoove:392,Viljelijäntie,8,8
+2026-08-29T05:20+00:00,smoove:030,Itämerentori,5,35
+2026-08-29T05:20+00:00,smoove:272,Marjaniementie,19,0
+2026-08-29T05:20+00:00,smoove:393,Malminkartanon asema,10,4
+2026-08-29T05:20+00:00,smoove:031,Marian sairaala,3,13
+2026-08-29T05:20+00:00,smoove:394,Tuohipolku,7,5
+2026-08-29T05:20+00:00,smoove:032,Eläinmuseo,1,19
+2026-08-29T05:20+00:00,smoove:274,Voikukantie,8,8
+2026-08-29T05:20+00:00,smoove:395,Honkasuo,1,15
+2026-08-29T05:20+00:00,smoove:044,Sörnäinen (M),1,21
+2026-08-29T05:20+00:00,smoove:286,Mamsellimyllynkatu,3,13
+2026-08-29T05:20+00:00,smoove:045,Brahen kenttä,0,20
+2026-08-29T05:20+00:00,smoove:046,Diakoniapuisto,0,16
+2026-08-29T05:20+00:00,smoove:047,Vanha Kauppahalli,16,6
+2026-08-29T05:20+00:00,smoove:048,Mastokatu,35,0
+2026-08-29T05:20+00:00,smoove:049,Annankatu,2,15
+2026-08-29T05:20+00:00,smoove:280,Puotilan ostoskeskus,31,0
+2026-08-29T05:20+00:00,smoove:281,Puotila (M),19,1
+2026-08-29T05:20+00:00,smoove:040,Hakaniemi (M),4,16
+2026-08-29T05:20+00:00,smoove:161,Eteläesplanadi,0,16
+2026-08-29T05:20+00:00,smoove:282,Karhulantie,18,0
+2026-08-29T05:20+00:00,smoove:041,Ympyrätalo,8,28
+2026-08-29T05:20+00:00,smoove:162,Leppäsuonaukio,4,24
+2026-08-29T05:20+00:00,smoove:283,Alakiventie,2,12
+2026-08-29T05:20+00:00,smoove:042,Haapaniemenkatu,2,16
+2026-08-29T05:20+00:00,smoove:163,Lehtisaarentie,4,8
+2026-08-29T05:20+00:00,smoove:284,Myllypuro (M),1,27
+2026-08-29T05:20+00:00,smoove:043,Karhupuisto,1,23
+2026-08-29T05:20+00:00,smoove:285,Orpaanporras,9,5
+2026-08-29T05:20+00:00,smoove:055,Puistokaari,3,13
+2026-08-29T05:20+00:00,smoove:056,Luoteisväylä,7,13
+2026-08-29T05:20+00:00,smoove:057,Lauttasaaren ostoskeskus,9,17
+2026-08-29T05:20+00:00,smoove:058,Lauttasaarensilta,29,0
+2026-08-29T05:20+00:00,smoove:059,Salmisaarenranta,1,27
+2026-08-29T05:20+00:00,smoove:290,Vallilan varikko,8,12
+2026-08-29T05:20+00:00,smoove:291,Itäkeskus Metrovarikko,9,7
+2026-08-29T05:20+00:00,smoove:050,Melkonkuja,8,4
+2026-08-29T05:20+00:00,smoove:292,Koskelan varikko,4,12
+2026-08-29T05:20+00:00,smoove:051,Itälahdenkatu,15,0
+2026-08-29T05:20+00:00,smoove:293,Korkeasaari,3,13
+2026-08-29T05:20+00:00,smoove:052,Heikkilänaukio,15,5
+2026-08-29T05:20+00:00,smoove:294,Postipuisto,2,16
+2026-08-29T05:20+00:00,smoove:053,Heikkiläntie,20,0
+2026-08-29T05:20+00:00,smoove:054,Gyldenintie,41,0
+2026-08-29T05:20+00:00,smoove:066,Ehrenströmintie,0,20
+2026-08-29T05:20+00:00,smoove:067,Perämiehenkatu,9,7
+2026-08-29T05:20+00:00,smoove:068,Albertinkatu,2,18
+2026-08-29T05:20+00:00,smoove:069,Kalevankatu,2,14
+2026-08-29T05:20+00:00,smoove:060,Kaapelitehdas,21,0
+2026-08-29T05:20+00:00,smoove:061,Länsisatamankatu,6,10
+2026-08-29T05:20+00:00,smoove:062,Välimerenkatu,46,0
+2026-08-29T05:20+00:00,smoove:063,Jätkäsaarenlaituri,9,10
+2026-08-29T05:20+00:00,smoove:064,Tyynenmerenkatu,10,10
+2026-08-29T05:20+00:00,smoove:065,Hernesaarenranta,26,14
+2026-08-29T05:20+00:00,smoove:118,Fleminginkatu,0,18
+2026-08-29T05:20+00:00,smoove:239,Viikin tiedepuisto,7,21
+2026-08-29T05:20+00:00,smoove:119,Gebhardinaukio,0,20
+2026-08-29T05:20+00:00,smoove:110,Maistraatintori,1,19
+2026-08-29T05:20+00:00,smoove:231,Siltavoudintie,5,11
+2026-08-29T05:20+00:00,smoove:352,Tapanilan asema,2,10
+2026-08-29T05:20+00:00,smoove:111,Esterinportti,4,16
+2026-08-29T05:20+00:00,smoove:595,Westendintie,10,6
+2026-08-29T05:20+00:00,smoove:232,Oulunkylän asema,4,16
+2026-08-29T05:20+00:00,smoove:353,Helluntairaitti,9,11
+2026-08-29T05:20+00:00,smoove:112,Rautatieläisenkatu,5,17
+2026-08-29T05:20+00:00,smoove:596,Toppelundinportti,2,10
+2026-08-29T05:20+00:00,smoove:233,Kirkkoherrantie,0,10
+2026-08-29T05:20+00:00,smoove:354,Saniaiskuja,9,7
+2026-08-29T05:20+00:00,smoove:113,Pasilan asema,4,36
+2026-08-29T05:20+00:00,smoove:597,Linnakepolku,9,1
+2026-08-29T05:20+00:00,smoove:234,Otto Brandtin tie,26,0
+2026-08-29T05:20+00:00,smoove:355,Halmetie,10,6
+2026-08-29T05:20+00:00,smoove:114,Ratapihantie,2,18
+2026-08-29T05:20+00:00,smoove:235,Katariina Saksilaisen katu,10,6
+2026-08-29T05:20+00:00,smoove:356,Laulurastaantie,4,10
+2026-08-29T05:20+00:00,smoove:115,Venttiilikuja,0,16
+2026-08-29T05:20+00:00,smoove:236,Hernepellontie,14,0
+2026-08-29T05:20+00:00,smoove:357,Vanha Tapanilantie,10,6
+2026-08-29T05:20+00:00,smoove:116,Linnanmäki,1,27
+2026-08-29T05:20+00:00,smoove:237,Aulangontie,7,9
+2026-08-29T05:20+00:00,smoove:358,Syystie,7,11
+2026-08-29T05:20+00:00,smoove:117,Brahen puistikko,1,11
+2026-08-29T05:20+00:00,smoove:238,Pihlajamäki,6,10
+2026-08-29T05:20+00:00,smoove:359,Malmin sairaala,3,13
+2026-08-29T05:20+00:00,smoove:591,Mellstenintie,21,9
+2026-08-29T05:20+00:00,smoove:350,Töyrynummi,5,9
+2026-08-29T05:20+00:00,smoove:593,Toppelundintie,6,6
+2026-08-29T05:20+00:00,smoove:230,Mäkitorpantie,0,14
+2026-08-29T05:20+00:00,smoove:351,Kotinummentie,15,1
+2026-08-29T05:20+00:00,smoove:129,Pernajantie,10,8
+2026-08-29T05:20+00:00,smoove:008,Vanha kirkkopuisto,0,24
+2026-08-29T05:20+00:00,smoove:009,Erottajan aukio,0,44
+2026-08-29T05:20+00:00,smoove:121,Vilhonvuorenkatu,3,11
+2026-08-29T05:20+00:00,smoove:242,Von Daehnin katu,17,0
+2026-08-29T05:20+00:00,smoove:363,Väärämäentie,12,0
+2026-08-29T05:20+00:00,smoove:001,Kaivopuisto,36,0
+2026-08-29T05:20+00:00,smoove:122,Lintulahdenkatu,4,20
+2026-08-29T05:20+00:00,smoove:243,Mustikkamaa,17,0
+2026-08-29T05:20+00:00,smoove:364,Ala-Malmin tori,16,0
+2026-08-29T05:20+00:00,smoove:002,Laivasillankatu,17,0
+2026-08-29T05:20+00:00,smoove:123,Näkinsilta,13,13
+2026-08-29T05:20+00:00,smoove:244,Relanderinaukio,10,6
+2026-08-29T05:20+00:00,smoove:365,Karviaistie,16,0
+2026-08-29T05:20+00:00,smoove:003,Kapteeninpuistikko,6,10
+2026-08-29T05:20+00:00,smoove:124,Isoisänsilta,52,0
+2026-08-29T05:20+00:00,smoove:245,Kulosaari (M),6,14
+2026-08-29T05:20+00:00,smoove:366,Tilketori,0,20
+2026-08-29T05:20+00:00,smoove:004,Viiskulma,1,13
+2026-08-29T05:20+00:00,smoove:125,Arielinkatu,27,0
+2026-08-29T05:20+00:00,smoove:246,Tupasaarentie,14,0
+2026-08-29T05:20+00:00,smoove:367,Karhusuontie,1,13
+2026-08-29T05:20+00:00,smoove:005,Sepänkatu,8,24
+2026-08-29T05:20+00:00,smoove:126,Kalasatama (M),24,0
+2026-08-29T05:20+00:00,smoove:247,Haakoninlahdenkatu,27,0
+2026-08-29T05:20+00:00,smoove:368,Pukinmäen liikuntapuisto,6,8
+2026-08-29T05:20+00:00,smoove:127,Teurastamo,26,4
+2026-08-29T05:20+00:00,smoove:006,Hietalahdentori,8,16
+2026-08-29T05:20+00:00,smoove:248,Gunillantie,12,4
+2026-08-29T05:20+00:00,smoove:369,Pukinmäen asema,10,2
+2026-08-29T05:20+00:00,smoove:007,Designmuseo,0,14
+2026-08-29T05:20+00:00,smoove:128,Päijänteentie,1,13
+2026-08-29T05:20+00:00,smoove:249,Isosaarentie,16,0
+2026-08-29T05:20+00:00,smoove:360,Malmin asema,10,14
+2026-08-29T05:20+00:00,smoove:240,Viikin normaalikoulu,39,0
+2026-08-29T05:20+00:00,smoove:361,Huhtakuja,2,14
+2026-08-29T05:20+00:00,smoove:120,Mäkelänkatu,0,26
+2026-08-29T05:20+00:00,smoove:241,Agronominkatu,36,0
+2026-08-29T05:20+00:00,smoove:362,Teerisuontie,5,9
+2026-08-29T05:20+00:00,smoove:019,Rautatientori / itä,2,18
+2026-08-29T05:20+00:00,smoove:011,Unioninkatu,9,13
+2026-08-29T05:20+00:00,smoove:132,Urhea-kampus,12,0
+2026-08-29T05:20+00:00,smoove:253,Tammisalon aukio,15,5
+2026-08-29T05:20+00:00,smoove:374,Etupellonpuisto,14,4
+2026-08-29T05:20+00:00,smoove:012,Kanavaranta,7,27
+2026-08-29T05:20+00:00,smoove:133,Paavalinpuisto,8,14
+2026-08-29T05:20+00:00,smoove:254,Agnetankuja,11,5
+2026-08-29T05:20+00:00,smoove:375,Piikintie,5,7
+2026-08-29T05:20+00:00,smoove:013,Merisotilaantori,39,0
+2026-08-29T05:20+00:00,smoove:134,Haukilahdenkatu,12,15
+2026-08-29T05:20+00:00,smoove:255,Laivalahden puistotie,13,3
+2026-08-29T05:20+00:00,smoove:376,Torpparinmäentie,2,14
+2026-08-29T05:20+00:00,smoove:135,Velodrominrinne,7,5
+2026-08-29T05:20+00:00,smoove:014,Senaatintori,1,21
+2026-08-29T05:20+00:00,smoove:256,Herttoniemenranta,11,3
+2026-08-29T05:20+00:00,smoove:377,Paloheinän maja,21,0
+2026-08-29T05:20+00:00,smoove:015,Ritarikatu,7,13
+2026-08-29T05:20+00:00,smoove:136,Sofianlehdonkatu,6,6
+2026-08-29T05:20+00:00,smoove:257,Margareetankuja,3,15
+2026-08-29T05:20+00:00,smoove:378,Paloheinäntie,13,3
+2026-08-29T05:20+00:00,smoove:137,Arabian kauppakeskus,37,0
+2026-08-29T05:20+00:00,smoove:016,Liisanpuistikko,23,0
+2026-08-29T05:20+00:00,smoove:258,Abraham Wetterin tie,14,2
+2026-08-29T05:20+00:00,smoove:379,Paloheinän kirjasto,4,14
+2026-08-29T05:20+00:00,smoove:017,Varsapuistikko,1,27
+2026-08-29T05:20+00:00,smoove:138,Arabiankatu,22,0
+2026-08-29T05:20+00:00,smoove:259,Petter Wetterin tie,4,16
+2026-08-29T05:20+00:00,smoove:018,Porthania,0,30
+2026-08-29T05:20+00:00,smoove:139,Muotoilijankatu,36,0
+2026-08-29T05:20+00:00,smoove:370,Rapakiventie,4,12
+2026-08-29T05:20+00:00,smoove:250,Reiherintie,20,0
+2026-08-29T05:20+00:00,smoove:371,Savela,14,0
+2026-08-29T05:20+00:00,smoove:130,Teollisuuskatu,2,16
+2026-08-29T05:20+00:00,smoove:251,Laajasalon ostoskeskus,11,5
+2026-08-29T05:20+00:00,smoove:372,Jokipellontie,21,0
+2026-08-29T05:20+00:00,smoove:131,Elimäenkatu,2,21
+2026-08-29T05:20+00:00,smoove:010,Kasarmitori,1,27
+2026-08-29T05:20+00:00,smoove:252,Humalniementie,4,10
+2026-08-29T05:20+00:00,smoove:373,Mikkolantie,0,16
+2026-08-29T05:20+00:00,smoove:022,Rautatientori / länsi,1,15
+2026-08-29T05:20+00:00,smoove:143,Kuikkarinne,6,6
+2026-08-29T05:20+00:00,smoove:264,Eränkävijäntori,2,14
+2026-08-29T05:20+00:00,smoove:385,Pajupillintie,5,11
+2026-08-29T05:20+00:00,smoove:023,Kiasma,0,18
+2026-08-29T05:20+00:00,smoove:144,Käpyläntie,7,7
+2026-08-29T05:20+00:00,smoove:265,Siilitie 9,3,13
+2026-08-29T05:20+00:00,smoove:386,Kannelmäen liikuntapuisto,7,9
+2026-08-29T05:20+00:00,smoove:145,Pohjolankatu,4,18
+2026-08-29T05:20+00:00,smoove:024,Mannerheimintie,1,17
+2026-08-29T05:20+00:00,smoove:266,Siilitie 13,2,12
+2026-08-29T05:20+00:00,smoove:387,Kauppakeskus Kaari,4,12
+2026-08-29T05:20+00:00,smoove:025,Narinkka,4,36
+2026-08-29T05:20+00:00,smoove:146,Pohjolanaukio,3,13
+2026-08-29T05:20+00:00,smoove:267,Roihupelto,9,5
+2026-08-29T05:20+00:00,smoove:388,Kaustisentie,0,16
+2026-08-29T05:20+00:00,smoove:147,Käpylän asema,1,13
+2026-08-29T05:20+00:00,smoove:026,Kamppi (M),2,16
+2026-08-29T05:20+00:00,smoove:268,Porolahden koulu,7,7
+2026-08-29T05:20+00:00,smoove:389,Kannelmäen asema,0,14
+2026-08-29T05:20+00:00,smoove:027,Eerikinkatu,0,14
+2026-08-29T05:20+00:00,smoove:148,Juhana Herttuan tie,14,2
+2026-08-29T05:20+00:00,smoove:269,Peukaloisentie,6,6
+2026-08-29T05:20+00:00,smoove:028,Lastenlehto,4,12
+2026-08-29T05:20+00:00,smoove:149,Toinen linja,7,15
+2026-08-29T05:20+00:00,smoove:029,Baana,9,7
+2026-08-29T05:20+00:00,smoove:380,Pirkkolan liikuntapuisto,0,14
+2026-08-29T05:20+00:00,smoove:260,Herttoniemi (M),4,20
+2026-08-29T05:20+00:00,smoove:381,Maununneva,1,13
+2026-08-29T05:20+00:00,smoove:140,Verkatehtaanpuisto,13,1
+2026-08-29T05:20+00:00,smoove:261,Asentajanpuisto,6,10
+2026-08-29T05:20+00:00,smoove:382,Hakuninmaa,1,17
+2026-08-29T05:20+00:00,smoove:020,Kaisaniemenpuisto,2,22
+2026-08-29T05:20+00:00,smoove:141,Intiankatu,8,8
+2026-08-29T05:20+00:00,smoove:262,Siilitie (M),7,15
+2026-08-29T05:20+00:00,smoove:383,Kuninkaantammi,11,9
+2026-08-29T05:20+00:00,smoove:021,Töölönlahdenkatu,7,33
+2026-08-29T05:20+00:00,smoove:142,Koskelantie,2,12
+2026-08-29T05:20+00:00,smoove:263,Herttoniemen kirkko,4,12
+2026-08-29T05:20+00:00,smoove:384,Kalannintie,1,13
+2026-08-29T05:20+00:00,smoove:316,Punakiventie,18,0
+2026-08-29T05:20+00:00,smoove:559,Pohjankulma,7,17
+2026-08-29T05:20+00:00,smoove:317,Haapasaarentie,1,17
+2026-08-29T05:20+00:00,smoove:318,Vuosaaren puistopolku,8,6
+2026-08-29T05:20+00:00,smoove:319,Purjetie,4,14
+2026-08-29T05:20+00:00,smoove:551,Tietäjä,8,12
+2026-08-29T05:20+00:00,smoove:310,Halkaisijantie,11,7
+2026-08-29T05:20+00:00,smoove:553,Metsänneidonpolku,10,8
+2026-08-29T05:20+00:00,smoove:311,Ramsinniementie,2,16
+2026-08-29T05:20+00:00,smoove:312,Meri-Rastilan tori,2,14
+2026-08-29T05:20+00:00,smoove:555,Kalevalantie,41,0
+2026-08-29T05:20+00:00,smoove:313,Rastila (M),2,14
+2026-08-29T05:20+00:00,smoove:314,Lokitie,3,15
+2026-08-29T05:20+00:00,smoove:557,Louhentori,11,5
+2026-08-29T05:20+00:00,smoove:315,Vuosaaren liikuntapuisto,17,1
+2026-08-29T05:20+00:00,smoove:206,Ruskeasuon varikko,2,20
+2026-08-29T05:20+00:00,smoove:327,Humikkalankuja,11,5
+2026-08-29T05:20+00:00,smoove:207,Vanha Viertotie,6,10
+2026-08-29T05:20+00:00,smoove:328,Lallukankuja,3,9
+2026-08-29T05:20+00:00,smoove:208,Valimotie,0,20
+2026-08-29T05:20+00:00,smoove:329,Kurkimäki,7,9
+2026-08-29T05:20+00:00,smoove:209,Takomotie,6,8
+2026-08-29T05:20+00:00,smoove:561,Koivu-Mankkaa,9,11
+2026-08-29T05:20+00:00,smoove:320,Koukkusaarentie,0,16
+2026-08-29T05:20+00:00,smoove:563,Mankkaanlaaksontie,8,18
+2026-08-29T05:20+00:00,smoove:200,Länsiterminaali,19,1
+2026-08-29T05:20+00:00,smoove:321,Vartioharjuntie,14,0
+2026-08-29T05:20+00:00,smoove:201,Länsisatamankuja,25,0
+2026-08-29T05:20+00:00,smoove:322,Rukatunturintie,17,0
+2026-08-29T05:20+00:00,smoove:565,Mankkaanaukio,12,2
+2026-08-29T05:20+00:00,smoove:202,Merihaka,21,0
+2026-08-29T05:20+00:00,smoove:323,Sallatunturintie,9,7
+2026-08-29T05:20+00:00,smoove:203,Opastinsilta,17,23
+2026-08-29T05:20+00:00,smoove:324,Sinkilätie,29,0
+2026-08-29T05:20+00:00,smoove:204,A.I. Virtasen aukio,3,21
+2026-08-29T05:20+00:00,smoove:325,Mellunmäki (M),14,6
+2026-08-29T05:20+00:00,smoove:205,Ilmalan asema,0,16
+2026-08-29T05:20+00:00,smoove:326,Tuukkalantie,1,15
+2026-08-29T05:20+00:00,smoove:217,Marttila,1,15
+2026-08-29T05:20+00:00,smoove:338,Jakomäentie,4,12
+2026-08-29T05:20+00:00,smoove:218,Pohjois-Haagan asema,5,11
+2026-08-29T05:20+00:00,smoove:339,Alppikylä,5,9
+2026-08-29T05:20+00:00,smoove:219,Näyttelijäntie,0,16
+2026-08-29T05:20+00:00,smoove:330,Kontula (M),0,20
+2026-08-29T05:20+00:00,smoove:573,Urheilupuisto (M),15,13
+2026-08-29T05:20+00:00,smoove:210,Pajamäki,6,6
+2026-08-29T05:20+00:00,smoove:331,Lettopolku,0,16
+2026-08-29T05:20+00:00,smoove:211,Haagan tori,10,6
+2026-08-29T05:20+00:00,smoove:332,Kontulankaari,2,14
+2026-08-29T05:20+00:00,smoove:575,Tontunmäentie,5,11
+2026-08-29T05:20+00:00,smoove:212,Tunnelitie,12,0
+2026-08-29T05:20+00:00,smoove:333,Kivikonkaari,1,13
+2026-08-29T05:20+00:00,smoove:213,Huopalahden asema,13,5
+2026-08-29T05:20+00:00,smoove:334,Varustuksentie,0,14
+2026-08-29T05:20+00:00,smoove:577,Olarinluoma,9,9
+2026-08-29T05:20+00:00,smoove:214,Valimon asema,2,18
+2026-08-29T05:20+00:00,smoove:335,Kurkimäentie,20,0
+2026-08-29T05:20+00:00,smoove:215,Pitäjänmäen asema,1,15
+2026-08-29T05:20+00:00,smoove:336,Kivikonlaita,0,16
+2026-08-29T05:20+00:00,smoove:579,Niittymaa,9,11
+2026-08-29T05:20+00:00,smoove:216,Jännetie,1,11
+2026-08-29T05:20+00:00,smoove:337,Kivikon liikuntapuisto,1,15
+2026-08-29T05:20+00:00,smoove:571,Tapiolan urheilupuisto,10,22
+2026-08-29T05:20+00:00,smoove:107,Tenholantie,4,14
+2026-08-29T05:20+00:00,smoove:228,Kustaankartano,1,11
+2026-08-29T05:20+00:00,smoove:349,Postiljooninkatu,8,8
+2026-08-29T05:20+00:00,smoove:229,Käskynhaltijantie,4,12
+2026-08-29T05:20+00:00,smoove:108,Radiokatu,2,10
+2026-08-29T05:20+00:00,smoove:109,Hertanmäenkatu,4,16
+2026-08-29T05:20+00:00,smoove:583,Haukilahdensolmu,10,6
+2026-08-29T05:20+00:00,smoove:220,Ida Aalbergin tie,10,8
+2026-08-29T05:20+00:00,smoove:341,Heikinlaakso,7,9
+2026-08-29T05:20+00:00,smoove:100,Teljäntie,18,0
+2026-08-29T05:20+00:00,smoove:221,Thalianaukio,9,6
+2026-08-29T05:20+00:00,smoove:342,Puistolan VPK,5,13
+2026-08-29T05:20+00:00,smoove:101,Munkkivuoren ostoskeskus,16,8
+2026-08-29T05:20+00:00,smoove:585,Haukilahdenaukio,17,0
+2026-08-29T05:20+00:00,smoove:222,Huovitie,5,7
+2026-08-29T05:20+00:00,smoove:343,Koetilankuja,30,0
+2026-08-29T05:20+00:00,smoove:223,Hämeenlinnanväylä,5,11
+2026-08-29T05:20+00:00,smoove:344,Puistolan asema,2,14
+2026-08-29T05:20+00:00,smoove:103,Korppaantie,4,12
+2026-08-29T05:20+00:00,smoove:587,Hauenkallio,4,8
+2026-08-29T05:20+00:00,smoove:224,Vesakkotie,7,5
+2026-08-29T05:20+00:00,smoove:345,Kruunuvuorenrannan lautta,22,0
+2026-08-29T05:20+00:00,smoove:104,Kriikunakuja,8,8
+2026-08-29T05:20+00:00,smoove:225,Maunula,6,10
+2026-08-29T05:20+00:00,smoove:346,Maatullinkuja,2,16
+2026-08-29T05:20+00:00,smoove:105,Tilkantori,23,0
+2026-08-29T05:20+00:00,smoove:589,Haukilahdenranta,4,12
+2026-08-29T05:20+00:00,smoove:226,Lepolantie,3,11
+2026-08-29T05:20+00:00,smoove:347,Sateenkaarentie,12,6
+2026-08-29T05:20+00:00,smoove:106,Korppaanmäentie,1,15
+2026-08-29T05:20+00:00,smoove:227,Kylävoudintie,3,11
+2026-08-29T05:20+00:00,smoove:348,Siltamäki,16,0
+2026-08-29T05:20+00:00,smoove:581,Niittykumpu (M),17,15
+2026-08-29T05:20+00:00,smoove:340,Jakomäki,5,11
+2026-08-29T05:20+00:00,smoove:635,Kuunkatu,1,23
+2026-08-29T05:20+00:00,smoove:515,Oravannahkatori,11,5
+2026-08-29T05:20+00:00,smoove:757,Painiitty,18,0
+2026-08-29T05:20+00:00,smoove:637,Ruomelantie,2,10
+2026-08-29T05:20+00:00,smoove:517,Länsituuli,1,19
+2026-08-29T05:20+00:00,smoove:639,Itäportti,2,16
+2026-08-29T05:20+00:00,smoove:518,Tuulimäki,12,8
+2026-08-29T05:20+00:00,smoove:519,Tapionaukio,4,22
+2026-08-29T05:20+00:00,smoove:751,Vallipolku,7,13
+2026-08-29T05:20+00:00,smoove:631,Friisilänaukio,9,3
+2026-08-29T05:20+00:00,smoove:511,Sateentie,14,4
+2026-08-29T05:20+00:00,smoove:753,Linnuntie,1,23
+2026-08-29T05:20+00:00,smoove:633,Avaruuskatu,10,6
+2026-08-29T05:20+00:00,smoove:513,Hakalehto,8,16
+2026-08-29T05:20+00:00,smoove:755,Kutsuntatie,2,14
+2026-08-29T05:20+00:00,smoove:525,Mäntyviita,15,0
+2026-08-29T05:20+00:00,smoove:767,Ruutikatu,0,10
+2026-08-29T05:20+00:00,smoove:404,Sompasaari,39,0
+2026-08-29T05:20+00:00,smoove:647,Lystimäki,5,5
+2026-08-29T05:20+00:00,smoove:405,Jollas,27,0
+2026-08-29T05:20+00:00,smoove:527,Otsolahti,8,10
+2026-08-29T05:20+00:00,smoove:649,Lystimäensilta,19,0
+2026-08-29T05:20+00:00,smoove:529,Keilaniemi (M),4,36
+2026-08-29T05:20+00:00,smoove:761,Mäkkylän asema,0,20
+2026-08-29T05:20+00:00,smoove:641,Komeetankatu,3,13
+2026-08-29T05:20+00:00,smoove:763,Kalkkipellonmäki,9,15
+2026-08-29T05:20+00:00,smoove:400,Kuusisaari,8,8
+2026-08-29T05:20+00:00,smoove:643,Auringonkatu,1,19
+2026-08-29T05:20+00:00,smoove:401,Koivusaari (M),18,0
+2026-08-29T05:20+00:00,smoove:523,Ahertajantie,1,15
+2026-08-29T05:20+00:00,smoove:402,Bermudankuja,15,0
+2026-08-29T05:20+00:00,smoove:645,Piispankallio,4,12
+2026-08-29T05:20+00:00,smoove:403,Verkkosaari,21,0
+2026-08-29T05:20+00:00,smoove:537,Innopoli,10,10
+2026-08-29T05:20+00:00,smoove:538,Hagalundinpuisto,0,14
+2026-08-29T05:20+00:00,smoove:539,"Aalto-yliopisto (M), Tietotie",0,20
+2026-08-29T05:20+00:00,smoove:651,Suurpellonaukio,31,0
+2026-08-29T05:20+00:00,smoove:531,Keilaranta,0,24
+2026-08-29T05:20+00:00,smoove:653,Lukutori,22,0
+2026-08-29T05:20+00:00,smoove:532,Betonimies,4,12
+2026-08-29T05:20+00:00,smoove:533,Tekniikantie,5,13
+2026-08-29T05:20+00:00,smoove:547,Jämeräntaival,1,29
+2026-08-29T05:20+00:00,smoove:305,Kalkkihiekantie,12,4
+2026-08-29T05:20+00:00,smoove:306,Kauppakeskus Columbus,5,15
+2026-08-29T05:20+00:00,smoove:549,Maarinranta,5,11
+2026-08-29T05:20+00:00,smoove:307,Ulappasilta,3,15
+2026-08-29T05:20+00:00,smoove:308,Mosaiikkitori,4,14
+2026-08-29T05:20+00:00,smoove:309,Kaivonkatsojanpuisto,7,11
+2026-08-29T05:20+00:00,smoove:541,"Aalto-yliopisto (M), Korkeakouluaukio",4,36
+2026-08-29T05:20+00:00,smoove:543,Otaranta,16,4
+2026-08-29T05:20+00:00,smoove:301,Aurinkotuulenkatu,2,28
+2026-08-29T05:20+00:00,smoove:302,Sumukuja,2,14
+2026-08-29T05:20+00:00,smoove:545,Sähkömies,2,14
+2026-08-29T05:20+00:00,smoove:303,Leikosaarentie,7,9
+2026-08-29T05:20+00:00,smoove:304,Aurinkolahdenaukio,31,0
+2026-08-29T05:20+00:00,smoove:713,Upseerinkatu,17,13
+2026-08-29T05:20+00:00,smoove:715,Komentajankatu,25,0
+2026-08-29T05:20+00:00,smoove:716,Vermo,3,13
+2026-08-29T05:20+00:00,smoove:719,Säteri,9,23
+2026-08-29T05:20+00:00,smoove:710,Kössi Koskisen aukio,14,6
+2026-08-29T05:20+00:00,smoove:709,Yhdyskunnankuja,1,19
+2026-08-29T05:20+00:00,smoove:723,Säterinniitty,4,6
+2026-08-29T05:20+00:00,smoove:603,Matinlahdenranta,22,0
+2026-08-29T05:20+00:00,smoove:725,Rummunlyöjänkatu,5,15
+2026-08-29T05:20+00:00,smoove:727,Ratsutori,1,31
+2026-08-29T05:20+00:00,smoove:607,Nuottaniementie,27,0
+2026-08-29T05:20+00:00,smoove:729,Leppävaaranaukio,7,15
+2026-08-29T05:20+00:00,smoove:609,Sepetlahdentie,14,0
+2026-08-29T05:20+00:00,smoove:721,Säterinrinne,1,15
+2026-08-29T05:20+00:00,smoove:601,Nokkala,6,12
+2026-08-29T05:20+00:00,smoove:613,Matinkyläntie,13,1
+2026-08-29T05:20+00:00,smoove:735,Mestarinkatu,3,17
+2026-08-29T05:20+00:00,smoove:615,Tiistiläntie,11,7
+2026-08-29T05:20+00:00,smoove:737,Muurarinkuja,3,15
+2026-08-29T05:20+00:00,smoove:617,Tiistinkallio,24,0
+2026-08-29T05:20+00:00,smoove:739,Postipuun koulu,7,9
+2026-08-29T05:20+00:00,smoove:619,Etuniementie,6,4
+2026-08-29T05:20+00:00,smoove:731,Leppävaarankäytävä,9,19
+2026-08-29T05:20+00:00,smoove:611,Matinkartanontie,25,0
+2026-08-29T05:20+00:00,smoove:733,Läkkitori,13,11
+2026-08-29T05:20+00:00,smoove:503,Keilalahti,3,28
+2026-08-29T05:20+00:00,smoove:745,Leppävaaran urheilupuisto,13,19
+2026-08-29T05:20+00:00,smoove:625,Suomenlahdentie,5,27
+2026-08-29T05:20+00:00,smoove:505,Westendinasema,0,16
+2026-08-29T05:20+00:00,smoove:747,Leppävaaran uimahalli,10,8
+2026-08-29T05:20+00:00,smoove:626,Tynnyritie,8,8
+2026-08-29T05:20+00:00,smoove:627,Piispansilta,3,37
+2026-08-29T05:20+00:00,smoove:507,Golfpolku,8,8
+2026-08-29T05:20+00:00,smoove:749,Vallikatu,14,10
+2026-08-29T05:20+00:00,smoove:629,Piispanportti,4,12
+2026-08-29T05:20+00:00,smoove:509,Revontulentie,2,16
+2026-08-29T05:20+00:00,smoove:741,Gransinmäki,1,19
+2026-08-29T05:20+00:00,smoove:621,Hauenkalliontie,39,0
+2026-08-29T05:20+00:00,smoove:501,Hanasaari,4,6
+2026-08-29T05:20+00:00,smoove:623,Nelikkotie,27,0
+2026-08-29T05:20+00:00,smoove:701,Gallen-Kallelan tie,3,9
+2026-08-29T05:20+00:00,smoove:703,Elfvik,3,7
+2026-08-29T05:20+00:00,smoove:705,Laajalahden keskus,8,8
+2026-08-29T05:20+00:00,smoove:707,Majurinkulma,13,11
