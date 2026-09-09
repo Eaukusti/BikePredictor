@@ -134,8 +134,9 @@ BikePredictor/
 ├── app.py                     Main Streamlit web app
 ├── requirements.txt           Python dependencies
 ├── README.md                  This file
+├── LICENSE                    MIT licence
 ├── data/
-│   └── history.csv            Time-series database (created by poll.yml)
+│   └── history.csv            Time-series database (built up by poll.yml over time)
 └── src/
     ├── digitransit_client.py  HSL API wrapper
     ├── poll_and_log.py        Scheduled snapshot collector
@@ -211,3 +212,7 @@ This is tunable; you could experiment with shorter decay for more reactive predi
 - **User location**: Geolocation-based station suggestions
 - **Multiple predictions**: Compare strategies (baseline only, live only, weighted blend)
 - **Performance optimization**: Cache history, index by station for faster lookups
+
+## License
+
+Released under the MIT License. Use it, fork it, build on it.
