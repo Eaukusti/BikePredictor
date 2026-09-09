@@ -1,8 +1,8 @@
 # BikePredictor
 
-**Helsinki City Bike Availability Predictor** — a real-time dashboard showing live bike station status and hourly predictions for the next 5 days. Built with HSL's Digitransit API, historical time-series analysis, and Streamlit.
+Live app: https://bikepredictor.streamlit.app
 
-Streamlit hosted version can be accessed here https://bikepredictor.streamlit.app
+**Helsinki City Bike Availability Predictor** — a real-time dashboard showing live bike station status and hourly predictions for the next 5 days. Built with HSL's Digitransit API, historical time-series analysis, and Streamlit.
 
 ## Overview
 
@@ -29,6 +29,37 @@ Is there going to be a bike at your station when you need it? This app predicts 
 ### Nearby Stations
 - Click "Find nearby stations" to discover alternatives within ~2 km
 - Great-circle distance calculation with interactive table
+
+## Running locally
+
+**Prerequisites:** Python 3.12, and a free Digitransit API key.
+
+1. Clone the repo and install dependencies:
+   ```
+   git clone <your-repo-url>
+   cd BikePredictor
+   pip install -r requirements.txt
+   ```
+2. Get a free API key at https://portal-api.digitransit.fi/ — sign up, go to
+   Products, subscribe to "Digitransit API" (free tier), then Profile →
+   Subscriptions to reveal your Primary key.
+3. Set it as an environment variable:
+   ```
+   export DIGITRANSIT_API_KEY=your_key_here
+   ```
+4. Run the app:
+   ```
+   streamlit run app.py
+   ```
+   Opens at `http://localhost:8501`.
+
+**Note on the Availability chart:** the live "bikes available now" numbers
+work immediately on a fresh clone. The trend and forecast, however, are
+built from `data/history.csv`, which only exists because a scheduled
+GitHub Action in this repo (`.github/workflows/poll.yml`) has been polling
+and accumulating it over time — a fresh clone won't have that history yet.
+Without it, the Availability section will show "No history yet" rather
+than a chart. That's expected, not a bug.
 
 ## Architecture
 
@@ -62,7 +93,7 @@ Data Flow:
 
 **Two-tier architecture:**
 1. **Web frontend** (`app.py`): Calls Digitransit API on every page load for live status
-2. **Historical pipeline**: Separate scheduled poll (GitHub Actions, ~every 15 min) that builds `history.csv` over time
+2. **Historical pipeline**: Separate scheduled poll (GitHub Actions, ~every 15 min limited by GitHub servers) that builds `history.csv` over time. Commits for history building are automated.
 
 ## How Predictions Work
 
@@ -162,7 +193,7 @@ This is tunable; you could experiment with shorter decay for more reactive predi
 
 ## Data Collection Notes
 
-- **Latency**: API polls run on a 15-minute schedule and is additionally limited by GitHub's servers resulting in an approx hourly data feed. High-frequency changes within minutes won't be captured.
+- **Latency**: API polls run on a 15-minute schedule and are additionally limited by GitHub's servers resulting in an approx hourly data feed. High-frequency changes within minutes won't be captured.
 - **Gaps**: If a poll fails or is skipped, `hourly_series()` forward-fills the previous value. This assumes "no change" rather than missing data.
 - **Station churn**: New stations occasionally appear in the HSL network. Once they're in `history.csv`, predictions work for them.
 - **Schema stability**: HSL's GraphQL schema is versioned, but the exact field names can change. The GraphiQL explorer (linked in `digitransit_client.py`) is the source of truth.
