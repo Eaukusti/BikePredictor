@@ -3,6 +3,7 @@
 Live app: https://bikepredictor.streamlit.app
 
 **Helsinki City Bike Availability Predictor** — a real-time dashboard showing live bike station status and hourly predictions for the next 5 days. Built with HSL's Digitransit API, historical time-series analysis, and Streamlit.
+<img width="1557" height="1538" alt="image" src="https://github.com/user-attachments/assets/578a008f-b9ee-440f-b073-820a148532e0" />
 
 ## Overview
 
