@@ -3,7 +3,8 @@
 Live app: https://bikepredictor.streamlit.app
 
 **Helsinki City Bike Availability Predictor** — a real-time dashboard showing live bike station status and hourly predictions for the next 5 days. Built with HSL's Digitransit API, historical time-series analysis, and Streamlit.
-<img width="1557" height="1538" alt="image" src="https://github.com/user-attachments/assets/578a008f-b9ee-440f-b073-820a148532e0" />
+<img width="1557" height="519" alt="image" src="https://github.com/user-attachments/assets/7ced8443-0aa1-4dc8-b20c-52a12f795376" />
+
 
 ## Overview
 
@@ -37,7 +38,7 @@ Is there going to be a bike at your station when you need it? This app predicts 
 
 1. Clone the repo and install dependencies:
    ```
-   git clone <your-repo-url>
+   git clone https://github.com/Eaukusti/BikePredictor
    cd BikePredictor
    pip install -r requirements.txt
    ```
@@ -124,17 +125,23 @@ The prediction algorithm in `predict.py` uses a **tiered baseline with exponenti
 
 ```
 BikePredictor/
-├── app.py                        Main Streamlit web app
-├── requirements.txt              Python dependencies
-├── README.md                     This file
+├── .devcontainer/
+│   └── devcontainer.json      Codespace container config (auto-created by GitHub)
+├── .github/
+│   └── workflows/
+│       └── poll.yml           Scheduled Action: polls stations, commits history
+├── .gitignore                 Excludes __pycache__ and other local build artifacts
+├── app.py                     Main Streamlit web app
+├── requirements.txt           Python dependencies
+├── README.md                  This file
 ├── data/
-│   └── history.csv               Time-series database (created by poll.yml)
+│   └── history.csv            Time-series database (created by poll.yml)
 └── src/
-    ├── digitransit_client.py     HSL API wrapper
-    ├── poll_and_log.py           Scheduled snapshot collector
-    ├── predict.py                Hourly availability predictor
-    ├── timeseries.py             Time-series aggregation helpers
-    └── geo.py                    Distance calculations
+    ├── digitransit_client.py  HSL API wrapper
+    ├── poll_and_log.py        Scheduled snapshot collector
+    ├── predict.py             Hourly availability predictor
+    ├── timeseries.py          Time-series aggregation helpers
+    └── geo.py                 Distance calculations
 ```
 
 ### Module Details
@@ -146,7 +153,7 @@ BikePredictor/
 - Returns: list of dicts with `stationId`, `name`, `lat`, `lon`, `bikes_available`, `docks_available`
 
 **`poll_and_log.py`**
-- Runs on schedule (GitHub Actions: every 15 min)
+- Runs on schedule (GitHub Actions: every 15 min, effectively hourly due to GitHub scheduling)
 - Fetches all stations and appends a row to `history.csv`
 - Creates file with header on first run
 - Records: timestamp, station_id, name, bikes_available, docks_available
